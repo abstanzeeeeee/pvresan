@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '**TOKEN**');
+define('BOT_TOKEN', '233383879:AAHIGObPUyPyRCfdZ8bHa9p_9XK5oOEXFNA');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = **ADMIN**;
+  $admin = 216996658;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
@@ -138,7 +138,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Ban
 Get Out Of Here Idiot🖕
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -159,7 +159,7 @@ Get Out Of Here Idiot🖕
     else{
         apiRequest("sendphoto", array('chat_id' => $rpto, "photo" => $substtr));
     }
-	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🗣پیام شما ارسال شد. " ,"parse_mode" =>"HTML"));
+	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "✅پیغام شما ارسال شد . ,"parse_mode" =>"HTML"));
     
 }  else if ($chat_id == $admin && $booleans[0] == "true") {
     
@@ -187,7 +187,7 @@ Get Out Of Here Idiot🖕
 			
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🏷 پیام شما به  ".$memcout." مخاطب ارسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -211,10 +211,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
-Get Out Of Here Idiot🖕
+Get Out Of Here Idiot�
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید�"","parse_mode" =>"HTML"));	
 
 }
     }
@@ -247,7 +247,7 @@ else if ($chat_id == $admin && $booleans[0] == "true") {
     }
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🏷 پیام شما به  ".$memcout." مخاطب ارسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -271,10 +271,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
-Get Out Of Here Idiot🖕
+Get Out Of Here Idiot
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید�","parse_mode" =>"HTML"));	
 
 }
     }
@@ -299,7 +299,7 @@ Get Out Of Here Idiot🖕
 			
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🏷 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -326,10 +326,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
-Get Out Of Here Idiot🖕
+Get Out Of Here Idiot
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید�" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -344,7 +344,7 @@ Get Out Of Here Idiot🖕
     else{
         apiRequest("sendDocument", array('chat_id' => $rpto, "document" => $video));
     }
-	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🗣پیام شما ارسال شد. " ,"parse_mode" =>"HTML"));
+	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "✅پیام شما ارسال شد. " ,"parse_mode" =>"HTML"));
     
 }
  else if ($chat_id == $admin && $booleans[0] == "true") {
@@ -359,7 +359,7 @@ Get Out Of Here Idiot🖕
 			
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🏷 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -383,10 +383,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
-Get Out Of Here Idiot🖕
+Get Out Of Here Idiot
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید�" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -401,7 +401,7 @@ Get Out Of Here Idiot🖕
     else{
         apiRequest("sendVoice", array('chat_id' => $rpto, "voice" => $video));
     }
-	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" =>"🗣پیام شما ارسال شد. ","parse_mode" =>"HTML"));
+	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" =>"✅�پیام شما ارسال شد. ","parse_mode" =>"HTML"));
     
 }
  else if ($chat_id == $admin && $booleans[0] == "true") {
@@ -413,7 +413,7 @@ Get Out Of Here Idiot🖕
         apiRequest("sendVoice", array('chat_id' => $membersidd[$y], "voice" => $video));
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🏷 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -437,10 +437,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
-Get Out Of Here Idiot🖕
+Get Out Of Here Idiot
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید�" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -455,7 +455,7 @@ Get Out Of Here Idiot🖕
     else{
         apiRequest("sendaudio", array('chat_id' => $rpto, "audio" => $video));
     }
-	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🗣پیام شما ارسال شد. " ,"parse_mode" =>"HTML"));
+	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "✅پیام شما ارسال شد. " ,"parse_mode" =>"HTML"));
     
 }
  else if ($chat_id == $admin && $booleans[0] == "true") {
@@ -468,7 +468,7 @@ Get Out Of Here Idiot🖕
 
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🏷 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -492,10 +492,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
-Get Out Of Here Idiot🖕
+Get Out Of Here Idiot
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید�","parse_mode" =>"HTML"));	
 
 }
     }
@@ -509,7 +509,7 @@ Get Out Of Here Idiot🖕
     
     apiRequest("sendcontact", array('chat_id' => $rpto, "phone_number" => $phone,"Last_name" =>$last,"first_name"=> $first));
     
-	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" =>"🗣پیام شما ارسال شد. ","parse_mode" =>"HTML"));
+	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" =>"✅پیام شما ارسال شد. ","parse_mode" =>"HTML"));
     
 }
 else if ($chat_id == $admin && $booleans[0] == "true") {
@@ -525,7 +525,7 @@ else if ($chat_id == $admin && $booleans[0] == "true") {
 
 		}
 		$memcout = count($membersidd)-1;
-	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "📦 پیام شما به  ".$memcout." مخاطب ازسال شد.
+	 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🏷 پیام شما به  ".$memcout." مخاطب ازسال شد.
 .","parse_mode" =>"HTML",'reply_markup' => array(
         'keyboard' => array(array('🗣 Send To All'),array('⚓️ Help','👥 Members','❌ Blocked Users'),array("Settings ⚙")),
         'one_time_keyboard' => true,
@@ -622,10 +622,10 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" =>$pmembersiddd[1]
 }else{
   if($substr !="thisisnarimanfrombeatbotteam"){
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
-Get Out Of Here Idiot🖕
+Get Out Of Here Idiot
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
-لطفا پیام ندهید🖕" ,"parse_mode" =>"HTML"));	
+لطفا پیام ندهید�" ,"parse_mode" =>"HTML"));	
 }
 else{
   $textfa =str_replace("thisisnarimanfrombeatbotteam","🖕",$text);;
